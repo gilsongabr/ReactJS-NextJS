@@ -1,0 +1,83 @@
+{
+    "bg": "https://cdn.hipwallpaper.com/i/31/26/xZNQ5F.jpg",
+    "tittle": "Título do Quiz",
+    "description": "Descrição do Quiz",
+    "questions": [
+        {
+            "image": "https://media0.giphy.com/media/v5LGVtcBFTV5K/giphy.gif?cid=ecf05e47xq8krm92pcir59azc95lo66arwbdk9nes5jn4m5j&rid=giphy.gif",
+            "title": "Killua pertence a uma família de ...",
+            "description": "Kill",
+            "answer": 1,
+            "alternatives":[
+                "Pescadores",
+                "Assassinos",
+                "Lobisomens",
+                "Caçadores"
+            ]
+        },
+
+        {
+            "image": "https://media1.tenor.com/images/083deba731898ae806588fa16ba8fbdd/tenor.gif",
+            "title": " Qual é o nome da habilidade de Kurapika que o permite usar todos os tipos de Nen com 100% de eficiência ?",
+            "description": "Especialista",
+            "answer": 2,
+            "alternatives":[
+                "Emperor Eyes",
+                "Scarlet Eyes",
+                "Emperor Time",
+                "Scarlet Time"
+            ]
+        },
+
+        {
+            "image": "https://media0.giphy.com/media/3ohc0RICoCKH0s7uSI/giphy.gif",
+            "title": "Primeiro membro da Trupe Fantasma a aparecer ?",
+            "description": "Sem contar com o Hisoka",
+            "answer": 0,
+            "alternatives":[
+                "Machi",
+                "Chrollo",                
+                "Feitan",
+                "Uvogin"
+            ]
+        },
+
+        {
+            "image": "https://media1.tenor.com/images/3f2057b4335d2a2274cbb6d081cad408/tenor.gif?itemid=11741641",
+            "title": "Qual foi a respectiva ordem de nascimento dos guardas reais formigas chimera ?",
+            "description": "Guardas reais",
+            "answer": 2,
+            "alternatives":[
+                "Pitou, Ed, Alphonse",
+                "Pouf, Pitou, Youpi",
+                "Pitou, Pouf, Youpi",
+                "Os guardas reais nasceram ao mesmo tempo"
+            ]
+        },
+
+        {
+            "image": "https://i.pinimg.com/originals/f4/cd/a8/f4cda8bf38a89bf170356d0bd0c7d395.gif",
+            "title": "Zazan foi morta por qual membro da Trupe Fantasma ?",
+            "description": "Zazan chimera ant",
+            "answer": 3,
+            "alternatives":[
+                "Shalnark",
+                "Bonolenov",
+                "Phinks",
+                "Feitan"
+            ]
+        }
+    ],
+    "external": [],
+    "theme":{
+        "colors":{
+            "primary": "#0276aa",
+            "secondary": "#ff7043",
+            "mainBg":"#1C1814",
+            "contrastText": "#FFFFFF",
+            "wrong": "#FF5722",
+            "success": "#4CAF50"
+        },
+        "borderRadius": "4px"
+    }
+}
