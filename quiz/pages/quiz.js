@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import Link from 'next/link';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -8,6 +10,8 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
 import AlternativesForm from '../src/components/AlternativeForm';
+import SocialMedia from '../src/components/SocialMidia';
+import Home from '../src/components/Home';
 
 function ResultWidget({ results }) {
   return (
@@ -43,6 +47,30 @@ function ResultWidget({ results }) {
           ))}
         </ul>
       </Widget.Content>
+
+      <Widget.Content >
+        <h4>Gilson Gabriel Zozias de Santana</h4>
+        <SocialMedia>
+          <ul>
+            {db.midias.map((midia) => (
+              <Link href={midia.href}>
+                <a target="_blank">
+                  <li>
+                    <img alt={midia.alt} src={midia.img} title={midia.tittle} />
+                  </li>
+                </a>
+              </Link>
+            ))}
+          </ul>
+        </SocialMedia>
+      </Widget.Content>
+      <Widget.Header>
+        <Link href="/">
+          <Home>
+            Home
+          </Home>
+        </Link>
+      </Widget.Header>
     </Widget>
   );
 }
@@ -77,7 +105,6 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>

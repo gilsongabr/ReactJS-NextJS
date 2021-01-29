@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import db from '../db.json';
@@ -10,6 +13,7 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
+import SocialMedia from '../src/components/SocialMidia';
 // eslint-disable-next-line import/no-named-as-default
 import QuizContainer from '../src/components/QuizContainer';
 
@@ -23,7 +27,16 @@ export default function Home() {
         <title>Quiz - Hunter x Hunter</title>
       </Head>
       <QuizContainer>
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>Hunter x Hunter</h1>
           </Widget.Header>
@@ -36,7 +49,7 @@ export default function Home() {
             >
               <Input
                 name="nomedoUsuario"
-                onChange={(event) => {setName(event.target.value);}}
+                onChange={(event) => { setName(event.target.value); }}
                 placeholder="Informe o seu nome"
                 value={name}
               />
@@ -46,13 +59,43 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
-            <p>Dê uma olhada nesses quizes incríveis que o pessoal da imersão fez: </p>
+            <h4>Gilson Gabriel Zozias de Santana</h4>
+            <SocialMedia>
+              <ul>
+                {db.midias.map((midia) => (
+                  <Link href={midia.href}>
+                    <a target="_blank">
+                      <li>
+                        <img alt={midia.alt} src={midia.img} title={midia.tittle} />
+                      </li>
+                    </a>
+                  </Link>
+                ))}
+              </ul>
+            </SocialMedia>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.section}
+          transition={{ delay: 1, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        />
         <GitHubCorner projectUrl="https://github.com/gilsongabr" />
       </QuizContainer>
     </QuizBackground>
