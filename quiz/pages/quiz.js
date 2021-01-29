@@ -13,7 +13,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        Resultado
       </Widget.Header>
 
       <Widget.Content>
