@@ -1,0 +1,17 @@
+.logoimg{
+    width: 200px;
+    height: 73px;
+}
+
+.marginh2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.menuhome{
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    z-index: 999;
+    top: 0;
+}

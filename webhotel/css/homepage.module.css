@@ -1,0 +1,93 @@
+.marginh2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.paddingpromo{
+    padding: 10px 5px;
+}
+
+.backimg1{
+    background-image: url("../public/homeimage.png");
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.divhomepage1{
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.h4homepage1{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+.h6homepage1{
+    margin: 0;
+    padding: 100px 0px;
+    background-color: white;
+    font-size: 28px;
+}
+
+.divhomepage2{
+    text-align: left;
+    display: inline-flex;
+}
+
+.divcols6{
+    background-color: white;
+}
+
+.divhomepage3{
+    padding-left: 10px;
+}
+
+.h6homepage2{
+    margin: 0;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.h6homepage3{
+    margin: 0;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.phomepage1{
+    font-size: 17px;
+}
+
+.phomepage2{
+    font-size: 15.7px;
+}
+
+.cols61{
+    padding: 0px;
+}
+
+.cols62{
+    padding-left: 0px;
+}
+
+.buttonhomepage{
+    border-radius: 50px;
+    background-color: blue;
+    margin: 40px 0;
+}
+
+.divhomepage4{
+    margin: 0 0.75rem;
+    background-color: white;
+}
